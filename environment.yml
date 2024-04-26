@@ -1,0 +1,15 @@
+name: sdd2024
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.9.18
+  - numpy
+  - pandas>=1.5.3
+  - matplotlib
+  - jupyterlab
+  - ipython
+  - scipy
+  - scikit-learn=1.3.0
+  - nbstripout
+  - seaborn>=0.12.2

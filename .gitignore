@@ -1,0 +1,8 @@
+*.aux
+*.ent
+*.log
+*.out
+*.toc
+*~
+*/*/.ipynb_checkpoints
+*/.ipynb_checkpoints
