@@ -637,10 +637,39 @@ En d'autres termes, l'observation d'un échantillon permet d'ajuster la loi a
 priori de $\Theta$ en sa loi a posteriori. Cette idée est au c\oe{}ur
 de \textbf{l'inférence bayésienne.}
 
+\subsection{Estimation par maximum a posteriori}
+
+L'\textit{estimation par maximum a posteriori} de $\theta$ est définie comme
+une valeur de $\Scal$ qui maximise la loi a posteriori de $\Theta$. Ainsi dans
+le cas discret,
+\begin{equation}
+  \label{eq:map_discret}
+  \hatmap{\theta} \in \argmax_{t \in \Scal} \PP_{\Theta|X_1, X_2, \dots, X_n}(\Theta=t)
+\end{equation}
+et dans le cas à densité,
+\begin{equation}
+  \label{eq:map_densite}
+  \hatmap{\theta} \in \argmax_{t \in \Scal} g_{\Theta|X_1, X_2, \dots, X_n}(t).
+\end{equation}
+   
+L'estimateur par maximum a posteriori coincide avec l'estimateur par
+maximum de vraisemblance si la distribution a priori utilisée est une
+distribution uniforme.
+  
+
+\subsection{Estimation de Bayes}
+L'estimation par maximum a posteriori est limitée dans le cas où la
+distribution a postériori est multi-modale ; en effet, le mode le plus grand
+peut être difficile à identifier par des algorithmes de gradient. De plus, elle
+ne prend en compte qu'un seul point de la distribution a posteriori, plutôt que
+de la considérer dans son intégralité.
 
 L'estimation de Bayes de $\theta$ est définie comme une valeur de $\Scal$ qui
-est la mieux estimée par la loi a posteriori de $\Theta$. Cette définition est
-générale, et dépend du sens donné à « mieux estimée par » ; nous utiliserons
+% est la mieux estimée par la loi a posteriori de $\Theta$
+minimise en espérance une fonction de coût sur la loi a posteriori de $\Theta$.
+Cette définition est
+générale, et dépend de la fonction de coût utilisée. %du sens donné à « mieux estimée par » ;
+Nous utiliserons
 une des définitions les plus courantes, et considérons à partir de maintenant
 l'erreur quadratique moyenne (définie section~\ref{sec:precision_estimateur}). 
 
