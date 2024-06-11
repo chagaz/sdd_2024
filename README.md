@@ -13,8 +13,8 @@ Notez que cet environnement vous fait utiliser JupyterLab et non pas Jupyter Not
 * `projet/` contient les données et instructions relatives au projet numérique.
 
 __Équipe pédagogique__
-* Responsable de cours : Chloé-Agathe Azencott
-* Chargé·e·s d'enseignement : Nicolas Desassis, Arthur Imbert, Tristan Lazard, Thibaud Martinez, et Lucia Clarotto.
+* Responsables de cours : Chloé-Agathe Azencott et Bruno Figliuzzi
+* Chargé·e·s d'enseignement : Julie Cartier, Théo Dumont, Paul Etheimer, Thibault Faney, Daniel Mimouni, Mathieu Molina et Corbinian Schlosser.
 
 __Emploi du temps__
 * __vendredi 7/06 :__ 
